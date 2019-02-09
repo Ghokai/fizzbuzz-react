@@ -1,1 +1,3 @@
-    Fizz Buzz React App
+Fizz Buzz React App
+
+    npm start
