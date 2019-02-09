@@ -19,7 +19,6 @@ class App extends Component {
   };
 
   render() {
-    const { limit, fizzDivider, buzzDivider } = this.state;
     return (
       <div className="app container">
         <h1 className="header-title">React Fizz-Buzz App</h1>
