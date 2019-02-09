@@ -12,3 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html,
+#root {
+  background-color: #32383e;
+}
+
+.fizz-buzz-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header-title {
+  color: white;
+}
