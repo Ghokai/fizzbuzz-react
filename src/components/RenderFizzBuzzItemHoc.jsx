@@ -12,9 +12,13 @@ const RenderFizzBuzzItemHoc = WrappedComponent => {
 
       const { fizzDivider, buzzDivider } = this.props;
 
-      if (value % (fizzDivider * buzzDivider) === 0) return <FizzBuzzElement />;
-      else if (value % fizzDivider === 0) return <FizzElement />;
-      else if (value % buzzDivider === 0) return <BuzzElement />;
+      const fizzRemainder = value % fizzDivider;
+      const buzzRemainder = value % buzzDivider;
+
+      if (fizzRemainder === 0 && buzzRemainder === 0)
+        return <FizzBuzzElement />;
+      else if (fizzRemainder === 0) return <FizzElement />;
+      else if (buzzRemainder === 0) return <BuzzElement />;
       else return <BasicElement value={value} />;
     }
 
